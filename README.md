@@ -19,8 +19,5 @@ To build the project, run `yarn build`.
 ### Testing
 Unit tests use Enzyme and Jest and can be run with `yarn test`.
 
-### Contributing
-???
-
 ### License
-???
+GNU General Public License v3.0
