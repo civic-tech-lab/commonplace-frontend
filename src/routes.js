@@ -7,7 +7,9 @@ import { App, Main } from './components';
 const appRoutes = (
   <Switch>
     <Route path="/" exact component={Main} />
-    <Route path="/about" exact component={() => <div>Example About Page route</div>} />
+    <Route path="/my-page" exact component={() => <div>Placeholder My Page route</div>} />
+    <Route path="/messages" exact component={() => <div>Placeholder Messages route</div>} />
+    <Route path="/settings" exact component={() => <div>Placeholder Settings route</div>} />
     <Route component={() => <div>Placeholder 404 page</div>} />
   </Switch>
 );
