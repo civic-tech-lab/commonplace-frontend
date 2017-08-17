@@ -1,0 +1,12 @@
+deployment:
+  staging:
+    pre:
+      - pyenv global 2.7.12
+    branch: develop
+    commands:
+      - echo $STAGING_GCLOUD_SERVICE_KEY | base64 --decode --ignore-garbage > ${HOME}/gcloud-service-key.json
+      - sudo /opt/google-cloud-sdk/bin/gcloud --quiet components update
+      - sudo /opt/google-cloud-sdk/bin/gcloud auth activate-service-account --key-file ${HOME}/gcloud-service-key.json
+      - sudo /opt/google-cloud-sdk/bin/gcloud config set project ${STAGING_GCLOUD_PROJECT}
+      - yarn build
+      - gsutil cp build/* gs://${STAGING_GCLOUD_BUCKET}
