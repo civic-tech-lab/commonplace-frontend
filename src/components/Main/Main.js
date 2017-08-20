@@ -5,9 +5,9 @@ import './Main.css';
 class Main extends Component {
   render() {
     return (
-      <div className="main">
+      <main className="main">
         Main content goes here
-      </div>
+      </main>
     );
   }
 }

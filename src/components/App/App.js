@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 
-import { Header, Footer, Sidebar } from '../';
+import { Header, Footer, SidebarNav } from '../';
 import './App.css';
 
 class App extends Component {
@@ -9,7 +9,7 @@ class App extends Component {
       <div className="app">
         <Header />
         <aside>
-          <Sidebar />
+          <SidebarNav />
         </aside>
         {this.props.children}
         <Footer />

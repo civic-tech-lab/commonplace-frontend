@@ -1,7 +1,9 @@
 import React, { Component } from 'react';
 import { Link } from 'react-router-dom'
 
+import { routeStrings } from '../../routes'
 import './Header.css';
+
 
 class Header extends Component {
   state = {
@@ -27,13 +29,13 @@ class Header extends Component {
   render() {
     return (
       <header className="header">
-        <section>
+        <div>
           <Link to="/">
             <div>CommonPlace</div>
             <div>++Falls Church++</div>
           </Link>
-        </section>
-        <section>
+        </div>
+        <div>
           <form onSubmit={this._submitSearch}>
             <input
               type="search"
@@ -42,12 +44,12 @@ class Header extends Component {
               placeholder="Search ++Falls Church++..."
             />
           </form>
-        </section>
-        <section>
-          <Link to="my-page">My Page</Link>
-          <Link to="messages">Messages</Link>
-          <Link to="settings">Settings</Link>
-        </section>
+        </div>
+        <div>
+          <Link to={`/${routeStrings.myPage}`}>My Page</Link>
+          <Link to={`/${routeStrings.messages}`}>Messages</Link>
+          <Link to={`/${routeStrings.settings}`}>Settings</Link>
+        </div>
       </header>
     );
   }
