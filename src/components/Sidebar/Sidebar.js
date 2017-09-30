@@ -3,11 +3,7 @@ import './Sidebar.css';
 
 class Sidebar extends Component {
   render() {
-    return (
-      <div className="Sidebar">
-        Sidebar goes here
-      </div>
-    );
+    return <div className="Sidebar">Sidebar goes here</div>;
   }
 }
 

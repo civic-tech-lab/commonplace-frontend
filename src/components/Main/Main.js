@@ -8,7 +8,7 @@ class Main extends Component {
     return (
       <div className="Main">
         <Header />
-          Main goes here
+        Main goes here
         <Sidebar />
         <Footer />
       </div>

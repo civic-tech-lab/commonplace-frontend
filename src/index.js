@@ -11,6 +11,7 @@ import './styles/index.css';
 ReactDOM.render(
   <Provider store={store}>
     <Router>{routes}</Router>
-  </Provider>
-, document.getElementById('root'));
+  </Provider>,
+  document.getElementById('root'),
+);
 registerServiceWorker();
