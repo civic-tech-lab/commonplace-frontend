@@ -1,7 +1,9 @@
 // @flow
 import React from 'react';
-import './Header.css';
+import styled from 'styled-components';
 
-const Header = () => <div className="Header">Header goes here</div>;
+const Root = styled.div`background-color: lightblue;`;
+
+const Header = () => <Root>Header goes here</Root>;
 
 export default Header;

@@ -1,7 +1,9 @@
 // @flow
 import React from 'react';
-import './Sidebar.css';
+import styled from 'styled-components';
 
-const Sidebar = () => <div className="Sidebar">Sidebar goes here</div>;
+const Root = styled.div`background-color: lightblue;`;
+
+const Sidebar = () => <Root>Sidebar goes here</Root>;
 
 export default Sidebar;

@@ -1,16 +1,18 @@
 // @flow
 import React from 'react';
+import styled from 'styled-components';
 
 import { Header, Footer, Sidebar } from '../';
-import './Main.css';
+
+const Wrapper = styled.div`background-color: beige;`;
 
 const Main = () => (
-  <div className="Main">
+  <Wrapper>
     <Header />
     Main goes here
     <Sidebar />
     <Footer />
-  </div>
+  </Wrapper>
 );
 
 export default Main;

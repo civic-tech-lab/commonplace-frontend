@@ -1,7 +1,9 @@
 // @flow
 import React from 'react';
-import './Footer.css';
+import styled from 'styled-components';
 
-const Footer = () => <div className="Footer">Footer goes here</div>;
+const Root = styled.div`background-color: lightblue;`;
+
+const Footer = () => <Root>Footer goes here</Root>;
 
 export default Footer;

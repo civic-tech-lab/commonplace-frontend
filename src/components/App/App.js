@@ -1,16 +1,6 @@
 // @flow
-import React, { type Node } from 'react';
-import PropTypes from 'prop-types';
-import './App.css';
+import styled from 'styled-components';
 
-type Props = {|
-  children?: Node,
-|};
-
-const App = ({ children }: Props) => <div className="App">{children}</div>;
-
-App.propTypes = {
-  children: PropTypes.node,
-};
+const App = styled.div`background-color: sandybrown;`;
 
 export default App;
