@@ -19,5 +19,9 @@ To build the project, run `yarn build`.
 ### Testing
 Unit tests use Enzyme and Jest and can be run with `yarn test`.
 
+### Storybook
+You can preview the components used to assemble this app using
+`@storybook/react`.  To start the storybook server, run `yarn storybook`.
+
 ### License
 GNU General Public License v3.0
