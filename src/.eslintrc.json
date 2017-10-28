@@ -11,9 +11,12 @@
   "parserOptions": {
     "ecmaVersion": 6
   },
-  "plugins": ["prettier"],
+  "plugins": ["flowtype", "prettier", "react"],
   "rules": {
     "no-warning-comments": "warn",
+
+    // eslint-plugin-flowtype
+    "flowtype/require-valid-file-annotation": ["error", "always"],
 
     // eslint-plugin-prettier
     "prettier/prettier": ["error", {
