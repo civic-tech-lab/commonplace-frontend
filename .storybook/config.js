@@ -3,6 +3,7 @@ import { configure } from '@storybook/react';
 
 function loadStories() {
   require('../src/components/App/demo.js');
+  require('../src/components/Button/demo.js');
   require('../src/components/Footer/demo.js');
   require('../src/components/Header/demo.js');
   require('../src/components/Main/demo.js');
