@@ -1,11 +1,14 @@
 ## Customize dependencies
 dependencies:
+  pre:
+    - nvm install 8.1.4
+
   override:
-    - yarn
+    - nvm use 8.1.4 && yarn
 
 # Customize test commands
 test:
   override:
-    - yarn eslint
-    - yarn flow
-    - yarn test
+    - nvm use 8.1.4 && yarn eslint
+    - nvm use 8.1.4 && yarn flow
+    - nvm use 8.1.4 && yarn test
