@@ -1,3 +1,4 @@
+// @flow
 import { combineReducers } from 'redux';
 
 // Follows the DUCKS method for organizing redux actions, reducers and actionTypes
