@@ -2,4 +2,5 @@
 test:
   override:
     - yarn eslint
+    - yarn flow
     - yarn test
