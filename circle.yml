@@ -1,3 +1,8 @@
+## Customize dependencies
+dependencies:
+  override:
+    - yarn
+
 # Customize test commands
 test:
   override:
