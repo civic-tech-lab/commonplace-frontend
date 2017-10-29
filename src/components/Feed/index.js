@@ -5,7 +5,7 @@ import styled from 'styled-components';
 import Avatar from '../Avatar';
 import Post from '../Post';
 
-type PostData = {|
+export type PostData = {|
   author: {|
     name: string,
     avatarUrl: string,
@@ -44,7 +44,7 @@ const Spacer = styled.div`
   width: ${GUTTER_SMALL}px;
 `;
 
-const Feed = ({ posts }: Props) => (
+const Feed = ({ posts = [] }: Props) => (
   <Container>
     {posts.map(({ author, body, category, id, timestamp, title }: PostData) => (
       <Row key={id}>
