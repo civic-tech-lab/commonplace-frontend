@@ -19,7 +19,7 @@ if (rootNode != null) {
     rootNode,
   );
 } else {
-  // TODO: Abstract console calls with loggign wrapper.
+  // TODO: Abstract console calls with logging wrapper.
   // eslint-disable-next-line no-console
   console.error(
     'No element with id "root" found.  React app could not be mounted!',
