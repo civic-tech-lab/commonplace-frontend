@@ -11,9 +11,9 @@ import Button from '../Button';
 import { color, font, transition } from '../../styles';
 
 type Props = {|
-  author: {|
+  author: {
     name: string,
-  |},
+  },
   body: string,
   category: {|
     name: string,
@@ -42,6 +42,7 @@ const Card = styled.div`
   background: white;
   border-top: 3px solid transparent;
   box-shadow: 0 2px 0 rgba(0, 0, 0, 0.05);
+  flex-grow: 1;
   padding: 13px;
   transition: border ${transition};
 
