@@ -3,6 +3,8 @@
 export const color = Object.freeze({
   casper: '#B0B9D3',
   cinnabar: '#E53333',
+  geyser: '#D0D9E2',
+  trout: '#4F5B66',
 });
 
 export const font = Object.freeze({
