@@ -11,6 +11,7 @@ function loadStories() {
   require('../src/components/Main/demo.js');
   require('../src/components/Post/demo.js');
   require('../src/components/Sidebar/demo.js');
+  require('../src/components/Sidebar/NavItem/demo.js');
   // You can require as many stories as you need.
 }
 

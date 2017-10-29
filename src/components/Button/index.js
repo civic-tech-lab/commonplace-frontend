@@ -7,6 +7,7 @@ import { color, font, transition } from '../../styles';
 type Props = {|
   block?: boolean,
   children: Node,
+  onClick?: () => void,
   primary?: boolean,
   icon?: Element<*>,
 |};
