@@ -15,8 +15,10 @@
   "devDependencies": {
     "babel-eslint": "^8.0.1",
     "eslint": "^4.8.0",
+    "eslint-plugin-flowtype": "2.39.1",
     "eslint-plugin-prettier": "^2.3.1",
     "eslint-plugin-react": "^7.4.0",
+    "flow-bin": "0.57.3",
     "prettier": "^1.7.2",
     "react-scripts": "1.0.7"
   },
@@ -25,6 +27,7 @@
     "build": "react-scripts build",
     "eject": "react-scripts eject",
     "eslint": "eslint --config src/.eslintrc.json src",
+    "flow": "flow check",
     "prettier": "prettier --write src/**/*.js",
     "start": "react-scripts start",
     "test": "react-scripts test --env=jsdom",
