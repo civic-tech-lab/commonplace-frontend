@@ -1,0 +1,5 @@
+# Customize test commands
+test:
+  override:
+    - yarn eslint
+    - yarn test

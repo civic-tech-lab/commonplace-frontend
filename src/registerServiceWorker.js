@@ -24,11 +24,15 @@ export default function register() {
                   // the fresh content will have been added to the cache.
                   // It's the perfect time to display a "New content is
                   // available; please refresh." message in your web app.
+                  // TODO: Replace this with real app messaging
+                  // eslint-disable-next-line no-console
                   console.log('New content is available; please refresh.');
                 } else {
                   // At this point, everything has been precached.
                   // It's the perfect time to display a
                   // "Content is cached for offline use." message.
+                  // TODO: Replace this with real app messaging
+                  // eslint-disable-next-line no-console
                   console.log('Content is cached for offline use.');
                 }
               }
@@ -36,6 +40,8 @@ export default function register() {
           };
         })
         .catch(error => {
+          // TODO: Replace this with real app messaging
+          // eslint-disable-next-line no-console
           console.error('Error during service worker registration:', error);
         });
     });

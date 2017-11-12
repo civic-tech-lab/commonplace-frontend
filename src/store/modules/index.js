@@ -4,5 +4,5 @@ import { combineReducers } from 'redux';
 // See: https://github.com/erikras/ducks-modular-redux
 
 export default combineReducers({
-  placeholder: () => ({})
+  placeholder: () => ({}),
 });

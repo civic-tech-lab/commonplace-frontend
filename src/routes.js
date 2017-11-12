@@ -7,11 +7,17 @@ import { App, Main } from './components';
 const appRoutes = (
   <Switch>
     <Route path="/" exact component={Main} />
-    <Route path="/about" exact component={() => <div>Example About Page route</div>} />
+    <Route
+      path="/about"
+      exact
+      component={() => <div>Example About Page route</div>}
+    />
     <Route component={() => <div>Placeholder 404 page</div>} />
   </Switch>
 );
 
-const baseRoute = <Route path="/" render={(props) => <App {...props}>{appRoutes}</App>} />;
+const baseRoute = (
+  <Route path="/" render={props => <App {...props}>{appRoutes}</App>} />
+);
 
 export default baseRoute;
