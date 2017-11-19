@@ -1,10 +1,8 @@
 // @flow
 import React from 'react';
-import styled from 'styled-components';
 
+import Wrapper from './Wrapper';
 import { Header, Footer, Sidebar } from '../';
-
-const Wrapper = styled.div`background-color: beige;`;
 
 const Main = () => (
   <Wrapper>
