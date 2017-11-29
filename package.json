@@ -21,7 +21,7 @@
     "eslint-plugin-react": "^7.4.0",
     "flow-bin": "0.57.3",
     "prettier": "^1.7.2",
-    "react-scripts": "1.0.7"
+    "react-scripts": "1.0.17"
   },
   "scripts": {
     "build-css": "node-sass-chokidar src/ -o src/",
