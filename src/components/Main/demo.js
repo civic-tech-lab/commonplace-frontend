@@ -2,6 +2,6 @@
 import React from 'react';
 import { storiesOf } from '@storybook/react';
 
-import Main from './Main';
+import Main from '.';
 
 storiesOf('Main', module).add('default', () => <Main />);

@@ -9,10 +9,6 @@ Clone the repo and install the dependencies with either `yarn` or `npm install`.
 
 To run the project in development, run `yarn start`.
 
-Additionally, if you are styling/making changes to SCSS files you will need to run `yarn run watch-css` in a separate terminal window.
-
-NOTE: Do not write directly into `.css` files because accompanying `.scss` files will overwrite them when they compile.
-
 ### Build
 To build the project, run `yarn build`.
 
