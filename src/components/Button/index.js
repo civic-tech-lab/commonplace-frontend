@@ -2,7 +2,12 @@
 import React, { type Element, type Node } from 'react';
 import styled from 'styled-components';
 
-import { color, font, transition } from '../../styles/variables';
+import {
+  brandColor,
+  textColor,
+  font,
+  transition,
+} from '../../styles/variables';
 
 type Props = {|
   block?: boolean,
@@ -19,7 +24,7 @@ const PADDING_VERTICAL = 7;
 const Root = styled.button`
   background: none;
   border: none;
-  color: ${props => (props.primary ? color.cinnabar : color.casper)};
+  color: ${props => (props.primary ? brandColor.primary : textColor.subdued)};
   cursor: pointer;
   display: ${props => (props.block ? 'block' : 'inline-block')};
   font-size: ${font.size.medium}px;
