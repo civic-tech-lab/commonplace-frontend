@@ -2,7 +2,7 @@
 import React, { type Element, type Node } from 'react';
 import styled from 'styled-components';
 
-import { color, font, transition } from '../../styles';
+import { color, font, transition } from '../../styles/variables';
 
 type Props = {|
   block?: boolean,
