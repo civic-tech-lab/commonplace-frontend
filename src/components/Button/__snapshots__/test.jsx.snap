@@ -42,7 +42,9 @@ exports[`Button renders expected output 1`] = `
         style={
           Object {
             "color": undefined,
+            "height": "1em",
             "verticalAlign": "middle",
+            "width": "1em",
           }
         }
         viewBox="0 0 40 40"
@@ -73,7 +75,9 @@ exports[`Button renders expected output 1`] = `
         style={
           Object {
             "color": undefined,
+            "height": "1em",
             "verticalAlign": "middle",
+            "width": "1em",
           }
         }
         viewBox="0 0 40 40"
@@ -104,7 +108,9 @@ exports[`Button renders expected output 1`] = `
         style={
           Object {
             "color": undefined,
+            "height": "1em",
             "verticalAlign": "middle",
+            "width": "1em",
           }
         }
         viewBox="0 0 40 40"
@@ -135,7 +141,9 @@ exports[`Button renders expected output 1`] = `
         style={
           Object {
             "color": undefined,
+            "height": "1em",
             "verticalAlign": "middle",
+            "width": "1em",
           }
         }
         viewBox="0 0 40 40"
@@ -166,7 +174,9 @@ exports[`Button renders expected output 1`] = `
         style={
           Object {
             "color": undefined,
+            "height": "1em",
             "verticalAlign": "middle",
+            "width": "1em",
           }
         }
         viewBox="0 0 40 40"

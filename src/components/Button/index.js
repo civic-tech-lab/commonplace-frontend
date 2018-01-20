@@ -54,7 +54,8 @@ const Spacer = styled.span`width: ${ICON_SPACING};`;
 const Button = ({ block = false, children, icon, primary }: Props) => (
   <Root block={block} primary={primary}>
     <FlexWrapper block={block}>
-      {icon != null && icon}
+      {icon != null &&
+        React.cloneElement(icon, { style: { height: '1em', width: '1em' } })}
       {icon != null && <Spacer key="spacer" />}
       {children}
     </FlexWrapper>
