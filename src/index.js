@@ -1,3 +1,4 @@
+// @flow
 import React from 'react';
 import ReactDOM from 'react-dom';
 import { Provider } from 'react-redux';
@@ -8,9 +9,21 @@ import store from './store';
 import registerServiceWorker from './registerServiceWorker';
 import './styles/index.css';
 
-ReactDOM.render(
-  <Provider store={store}>
-    <Router>{routes}</Router>
-  </Provider>
-, document.getElementById('root'));
+const rootNode = document.getElementById('root');
+
+if (rootNode != null) {
+  ReactDOM.render(
+    <Provider store={store}>
+      <Router>{routes}</Router>
+    </Provider>,
+    rootNode,
+  );
+} else {
+  // TODO: Abstract console calls with loggign wrapper.
+  // eslint-disable-next-line no-console
+  console.error(
+    'No element with id "root" found.  React app could not be mounted!',
+  );
+}
+
 registerServiceWorker();

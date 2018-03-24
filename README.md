@@ -9,15 +9,15 @@ Clone the repo and install the dependencies with either `yarn` or `npm install`.
 
 To run the project in development, run `yarn start`.
 
-Additionally, if you are styling/making changes to SCSS files you will need to run `yarn run watch-css` in a separate terminal window.
-
-NOTE: Do not write directly into `.css` files because accompanying `.scss` files will overwrite them when they compile.
-
 ### Build
 To build the project, run `yarn build`.
 
 ### Testing
 Unit tests use Enzyme and Jest and can be run with `yarn test`.
+
+### Storybook
+You can preview the components used to assemble this app using
+`@storybook/react`.  To start the storybook server, run `yarn storybook`.
 
 ### License
 GNU General Public License v3.0
